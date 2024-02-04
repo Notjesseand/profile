@@ -16,7 +16,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+        rel="stylesheet"
+        />
+
+      <link
+        href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Montserrat:wght@200&family=Poppins&display=swap"
+        rel="stylesheet"
+        />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins&display=swap"
+        rel="stylesheet"
+        />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap"
+        rel="stylesheet"
+        />
+        </head>
+      <body className="font-custom">{children}</body>
     </html>
-  )
+  );
 }
