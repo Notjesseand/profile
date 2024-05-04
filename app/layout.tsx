@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Jesse Nnorom',
+  title: 'Jesse',
   description: 'Portfolio website',
 }
 
@@ -39,6 +39,7 @@ export default function RootLayout({
         />
         </head>
       <body className="font-custom">{children}</body>
+      
     </html>
   );
 }

@@ -4,8 +4,8 @@ import { Sidebar } from './sidebar'
 
 export default function nav() {
   return (
-    <div className='flex sm:px-20 pt-8 justify-between px-5'>
-      <img src='/logo.png' className='sm:h-11 h-9 flex'/>
+    <div className='flex sm:px-20 py-7 md:py-5 justify-between px-5 bg-white '>
+      <img src='/logo.png' className='sm:h-11 h-8 flex items-center mt-1'/>
       <Sidebar/>
     </div>
   )

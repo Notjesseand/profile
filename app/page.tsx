@@ -6,12 +6,14 @@ import Services from "@/components/services";
 
 export default function Home() {
   return (
-    <main className="bg-slate-100">
-      <div className="cursor js-cursor"></div>
-      <div className="cursor"></div>
+    <main className="bg-slate-50 pb-64">
+      <div className="cursor "></div>
       <Nav />
-      <p className="text-5xl font-bold block md:hidden mt-12 text-center">
-        Jesse Nnorom
+      <p className="text-5xl font-bold block md:hidden mt-12 text-left pl-[20%] font-custom  ">
+        Jesse
+      </p>
+      <p className="font-custom text-slate-500 md:hidden text-left pl-[20%]">
+        web developer
       </p>
       <div className="pt-10 sm:px-20 sm:gap-40 grid md:grid-cols-3 grid-cols-1">
         {/* profile */}
@@ -27,14 +29,14 @@ export default function Home() {
         </div>
 
         <div className="sm:pt-20 col-span-2">
-          <p className="text-5xl font-bold md:block hidden">Jesse</p>
+          <p className="text-5xl font-bold md:block hidden">Jesse Nnorom</p>
           <p className="mt-5 text-gray-600 w-11/12 md:mx-0 mx-auto text-justify md:w-4/5 ">
             {Bio}
           </p>
         </div>
       </div>
       {/* services that I provide */}
-      <Services/>
+      <Services />
     </main>
   );
 }
