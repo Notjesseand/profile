@@ -2,6 +2,7 @@ import Image from "next/image";
 import Nav from "@/components/nav";
 import "../app/cursor.css";
 import {Bio} from "../app/data" 
+import Services from "@/components/services";
 
 export default function Home() {
   return (
@@ -27,11 +28,13 @@ export default function Home() {
 
         <div className="sm:pt-20 col-span-2">
           <p className="text-5xl font-bold md:block hidden">Jesse Nnorom</p>
-          <p className="mt-5 text-gray-600 w-11/12 mx-auto text-justify md:w-4/5 ">
+          <p className="mt-5 text-gray-600 w-11/12 md:mx-0 mx-auto text-justify md:w-4/5 ">
             {Bio}
           </p>
         </div>
       </div>
+      {/* services that I provide */}
+      <Services/>
     </main>
   );
 }
