@@ -19,7 +19,7 @@ export function Sidebar() {
     <Sheet>
       <SheetTrigger asChild>
         {/* <Button variant="outline">Open</Button> */}
-        <button className="rounded-full aspect-square p-2  bg-gray-200">
+        <button className="rounded-full aspect-square p-2 relative -mt-1 bg-white">
           <HiMiniBars2 className="md:text-5xl text-3xl"/>
         </button>
       </SheetTrigger>

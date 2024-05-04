@@ -6,7 +6,7 @@ import Services from "@/components/services";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="bg-slate-100">
       <div className="cursor js-cursor"></div>
       <div className="cursor"></div>
       <Nav />
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
         <div className="sm:pt-20 col-span-2">
-          <p className="text-5xl font-bold md:block hidden">Jesse Nnorom</p>
+          <p className="text-5xl font-bold md:block hidden">Jesse</p>
           <p className="mt-5 text-gray-600 w-11/12 md:mx-0 mx-auto text-justify md:w-4/5 ">
             {Bio}
           </p>
