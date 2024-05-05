@@ -9,7 +9,7 @@ export default function Support() {
       <div className="absolute bg-black h-full w-full opacity-70"></div>
       <div className="z-50 pl-6 md:pl-16">
         <p className="text-white text-4xl font-montserrat font-semibold">
-          Need help with professional <br className="hidden md:block"/> support? Let's work together!
+          Need help with professional <br className="hidden md:block"/> support? Let&apos;s work together!
         </p>
         <Link href="mailto:jessennorom@gmail.com" className="text-white mt-7 flex">
           jessennorom@gmail.com
