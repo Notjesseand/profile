@@ -5,6 +5,7 @@ import {Bio} from "../app/data"
 import Services from "@/components/services";
 import Works from "@/components/works";
 import Blog from "@/components/blog";
+import Support from "@/components/support";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
       <Services />
       <Works />
       <Blog/>
+      <Support/>
     </main>
   );
 }
