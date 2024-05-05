@@ -6,10 +6,11 @@ import Services from "@/components/services";
 import Works from "@/components/works";
 import Blog from "@/components/blog";
 import Support from "@/components/support";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
-    <main className="bg-slate-50 pb-64">
+    <main className="bg-slate-50">
       <Nav />
       <div className="pt-28"></div>
       <p className="text-5xl font-bold block md:hidden mt-12 text-left pl-[20%] font-custom  ">
@@ -41,8 +42,9 @@ export default function Home() {
       {/* services that I provide */}
       <Services />
       <Works />
-      <Blog/>
-      <Support/>
+      <Blog />
+      <Support />
+      <Contact />
     </main>
   );
 }

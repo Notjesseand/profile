@@ -38,9 +38,7 @@ export function Sidebar() {
             <Link href="" className="flex justify-center">
               Resume
             </Link>
-            <Link href="" className="flex justify-center">
-              Services
-            </Link>
+           
             <Link href="" className="flex justify-center">
               Blog
             </Link>
