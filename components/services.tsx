@@ -9,7 +9,7 @@ export default function Services() {
       <p className="capitalize font-custom  text-slate-500 text-lg md:ml-24 ml-7">
         SERVICES THAT I PROVIDE
       </p>
-      <p className="font-bold text-5xl md:ml-24 mt-1  ml-7 font-montserrat">
+      <p className="font-bold text-5xl md:ml-24 mt-1 font-montserrat ml-7 ">
         Services
       </p>
       {/* services */}
@@ -33,13 +33,11 @@ export default function Services() {
         </div>
         <div className="bg-white py-16 cursor- shadow-sm  text-start px-10 ">
           <FaDatabase className="text-7xl flex mt-3" />
-          <p className="text-2xl font-semibold mt-1">
-            Database management
-          </p>
+          <p className="text-2xl font-semibold mt-1">Database management</p>
           <p className="text-slate-500 mt-4">
-            I have a passion for organizing and optimizing
-            data. My expertise lies in proficiently managing databases using
-            technologies such as MySQL, and Firebase and Supabase. 
+            I have a passion for organizing and optimizing data. My expertise
+            lies in proficiently managing databases using technologies such as
+            MySQL, and Firebase and Supabase.
           </p>
         </div>
       </div>

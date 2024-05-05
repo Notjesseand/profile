@@ -26,7 +26,7 @@ export default function RootLayout({
         />
 
       <link
-        href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Montserrat:wght@200&family=Poppins&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Montserrat:wght@400&family=Poppins&display=swap"
         rel="stylesheet"
         />
       <link

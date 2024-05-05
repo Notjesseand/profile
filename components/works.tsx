@@ -5,13 +5,13 @@ export default function Works() {
   return (
     <div className="pt-14 ">
       <div className="mx-8 md:mx-20">
-        <p className="font-poppins text-lg text-slate-500 ">My Works</p>
+        <p className="text-lg text-slate-500">MY WORKS</p>
         <div className="md:flex">
-          <p className="text-5xl">Portfolio</p>
+          <p className="text-5xl font-bold font-montserrat">Portfolio</p>
           <p className="md:pl-[25%] text-slate-500 pt-2 md:pt-0 text-focus-in">
             Having a background in freelancing, I have worked on personal
             projects as well as projects for clients, working remotely with
-            teams.
+            teams and startups.
           </p>
         </div>
       </div>

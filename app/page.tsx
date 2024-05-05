@@ -4,12 +4,13 @@ import "../app/cursor.css";
 import {Bio} from "../app/data" 
 import Services from "@/components/services";
 import Works from "@/components/works";
+import Blog from "@/components/blog";
 
 export default function Home() {
   return (
     <main className="bg-slate-50 pb-64">
-      <div className="cursor "></div>
       <Nav />
+      <div className="pt-28"></div>
       <p className="text-5xl font-bold block md:hidden mt-12 text-left pl-[20%] font-custom  ">
         Jesse
       </p>
@@ -39,6 +40,7 @@ export default function Home() {
       {/* services that I provide */}
       <Services />
       <Works />
+      <Blog/>
     </main>
   );
 }
