@@ -19,7 +19,7 @@ export default function Works() {
         {/* digital library */}
         <Link
           href="https://thuggers-library.vercel.app/browse"
-          className="relative h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
+          className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
         >
           {/* Overlay */}
           <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-center">
@@ -34,7 +34,7 @@ export default function Works() {
         {/* Blog */}
         <Link
           href="https://web3-indol.vercel.app/"
-          className="relative h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
+          className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
         >
           {/* Overlay */}
           <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-center">
@@ -49,7 +49,7 @@ export default function Works() {
         {/* crypto */}
         <Link
           href="https://realgoldstation.vercel.app/"
-          className="relative h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
+          className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
         >
           {/* Overlay */}
           <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-center">
