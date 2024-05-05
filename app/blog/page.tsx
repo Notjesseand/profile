@@ -5,11 +5,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { db } from "@/config/firebase";
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { doc, setDoc } from "firebase/firestore";
+import { Spinner } from "@material-tailwind/react";
+import Support from "@/components/support";
+import Contact from "@/components/contact";
 
 export default function Page() {
   const [comment, setComment] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleNameChange = (event: any) => {
     setName(event.target.value);
@@ -21,47 +25,27 @@ export default function Page() {
     setEmail(event.target.value);
   };
 
-  const handleSubmit = (event:any) => {
-    event.preventDefault();
-    // Add comment data to Firestore
-    db.collection("comments")
-      .add({
+  const addData = async () => {
+    setIsLoading(true);
+    try {
+      await setDoc(doc(db, "comments", name), {
         name: name,
         email: email,
         comment: comment,
-      })
-      .then((docRef:any) => {
-        console.log("Comment added with ID: ", docRef.id);
-        // Clear form data after successful submission
-        setComment("");
-        setName("");
-        setEmail("");
-      })
-      .catch((error:any) => {
-        console.error("Error adding comment: ", error);
       });
+      setName("");
+      setEmail("");
+      setComment("");
+      setIsLoading(false);
+      console.log(`data added successfully`);
+    } catch (error) {
+      setIsLoading(false);
+      console.error(`Error adding data`, error);
+    }
   };
 
-  // const addData = async () => {
-  //    {
-  //     try {
-  //       await setDoc(doc(db, "authors", category.category), {
-  //         // category: category.category,
-  //         // image: category.image,
-  //       });
-  //       console.log(`${category.category} added successfully`);
-  //     } catch (error) {
-  //       console.error(`Error adding ${category.category}:`, error);
-  //     }
-  //   });
-  // };
-
- 
-
-  
-
   return (
-    <div className="font-custom pb-44">
+    <div className="font-custom">
       <Nav />
       {/* offest */}
       <div className="pt-28"></div>
@@ -83,24 +67,26 @@ export default function Page() {
             invented. At the beginning of the computing era, programming was
             usually limited to machine language programming. Machine language
             means those sets of instructions that are specific to a particular
-            machine or processor, which are in the form of 0&apos;s and 1&apos;s. These
-            are sequences of bits (0100110…). But it&apos;s quite difficult to write
-            a program or develop software in machine language. <br />
+            machine or processor, which are in the form of 0&apos;s and
+            1&apos;s. These are sequences of bits (0100110…). But it&apos;s
+            quite difficult to write a program or develop software in machine
+            language. <br />
             An object contains encapsulated data and procedures grouped together
-            to represent an entity. The &apos;object interface&apos; defines how the
-            object can be interacted with. An object-oriented program is
+            to represent an entity. The &apos;object interface&apos; defines how
+            the object can be interacted with. An object-oriented program is
             described by the interaction of these objects. Object-oriented
             design is the discipline of defining the objects and their
             interactions to solve a problem that was identified and documented
-            during object-oriented analysis. It&apos;s actually impossible to develop
-            software used in today&apos;s scenarios with sequences of bits. This was
-            the main reason programmers moved on to the next generation of
-            programming languages, developing assembly languages, which were
-            near enough to the English language to easily understand. These
-            assembly languages were used in microprocessors. With the invention
-            of the microprocessor, assembly languages flourished and ruled over
-            the industry, but it was not enough. Again, programmers came up with
-            something new, i.e., structured and procedural programming. <br />
+            during object-oriented analysis. It&apos;s actually impossible to
+            develop software used in today&apos;s scenarios with sequences of
+            bits. This was the main reason programmers moved on to the next
+            generation of programming languages, developing assembly languages,
+            which were near enough to the English language to easily understand.
+            These assembly languages were used in microprocessors. With the
+            invention of the microprocessor, assembly languages flourished and
+            ruled over the industry, but it was not enough. Again, programmers
+            came up with something new, i.e., structured and procedural
+            programming. <br />
           </p>
           <p className="indent">
             <b>Structured Programming</b> – The basic principle of the
@@ -129,8 +115,8 @@ export default function Page() {
             There were still some issues with these languages, though they
             fulfilled the criteria of well-structured programs, software, etc.
             They were not as structured as the requirements were at that time.
-            They seem to be over-generalized and don&apos;t correlate with real-time
-            applications. To solve such kinds of problems, OOP, an
+            They seem to be over-generalized and don&apos;t correlate with
+            real-time applications. To solve such kinds of problems, OOP, an
             object-oriented approach was developed as a solution.
           </p>
           <p>
@@ -185,8 +171,8 @@ export default function Page() {
             </span>
             <br />
             <span>
-              <b>4.</b>Doesn&apos;t allow data to freely flow in the entire system,
-              ie localized control flow.
+              <b>4.</b>Doesn&apos;t allow data to freely flow in the entire
+              system, ie localized control flow.
             </span>
             <br />
             <span>
@@ -272,6 +258,7 @@ export default function Page() {
                 type="text"
                 onChange={handleNameChange}
                 name=""
+                value={name}
                 placeholder="Full Name*"
                 className="pl-1 border-b-2  border-slate-700 outline-none w-full pb-4"
                 id=""
@@ -280,19 +267,29 @@ export default function Page() {
                 type="email"
                 onChange={handleEmailChange}
                 name=""
+                value={email}
                 placeholder="Email Address*"
                 className="pl-1 border-b-2  border-slate-700 outline-none w-full pb-4 mt-7"
                 id=""
               />
-              <Textarea onChange={handleCommentChange} />
-              {/* Displaying the comment */}
-              <p>Entered comment: {comment}</p>
-              <p>Entered name: {name}</p>
-              <p>Entered email: {email}</p>
+              <Textarea onChange={handleCommentChange} value={comment} />
+
+              <button
+                onClick={addData}
+                className=" border-2 rounded-full h-12 w-48 text-center flex justify-center items-center  mt-6 hover:bg-black hover:text-white"
+              >
+                {isLoading ? (
+                  <Spinner className="animate-spin text-orange-600 " />
+                ) : (
+                  "Send Comment"
+                )}
+              </button>
             </div>
           </div>
         </div>
       </div>
+      <Support/>  
+      <Contact/>
     </div>
   );
 }
