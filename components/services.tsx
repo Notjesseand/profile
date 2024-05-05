@@ -14,7 +14,7 @@ export default function Services() {
       </p>
       {/* services */}
       <div className="grid md:grid-cols-3 px-5 md:px-20 gap-x-2 gap-y-4 pt-5">
-        <div className="bg-white py-16 cursor- shadow-sm  text-start px-10 ">
+        <div className="bg-white py-16 cursor- shadow-sm  text-start px-6 md:px-10 ">
           <BsLaptop className="text-7xl flex mt-3" />
           <p className="text-2xl font-semibold mt-1">Website design</p>
           <p className="text-slate-500 mt-4">
@@ -23,7 +23,7 @@ export default function Services() {
             and SQL
           </p>
         </div>
-        <div className="bg-white py-16 cursor- shadow-sm  text-start px-10 ">
+        <div className="bg-white py-16 cursor- shadow-sm  text-start px-6 md:px-10 ">
           <CiServer className="text-7xl flex mt-3" />
           <p className="text-2xl font-semibold mt-1">Backend Development</p>
           <p className="text-slate-500 mt-4">
@@ -31,7 +31,7 @@ export default function Services() {
             Firebase for backend development
           </p>
         </div>
-        <div className="bg-white py-16 cursor- shadow-sm  text-start px-10 ">
+        <div className="bg-white py-16 cursor- shadow-sm  text-start px-6 md:px-10 ">
           <FaDatabase className="text-7xl flex mt-3" />
           <p className="text-2xl font-semibold mt-1">Database management</p>
           <p className="text-slate-500 mt-4">
