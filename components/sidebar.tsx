@@ -32,14 +32,14 @@ export function Sidebar() {
         </SheetHeader> */}
         <div className=" ">
           <div className=" items-center justify-center  space-y-4 font-custom mt-10 text-lg">
-            <Link href="" className="flex justify-center">
+            <Link href="/" className="flex justify-center">
               Home
             </Link>
             <Link href="" className="flex justify-center">
               Resume
             </Link>
            
-            <Link href="" className="flex justify-center">
+            <Link href="/blog" className="flex justify-center">
               Blog
             </Link>
             <Link href="" className="flex justify-center">
