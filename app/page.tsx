@@ -3,6 +3,7 @@ import Nav from "@/components/nav";
 import "../app/cursor.css";
 import {Bio} from "../app/data" 
 import Services from "@/components/services";
+import Works from "@/components/works";
 
 export default function Home() {
   return (
@@ -30,13 +31,14 @@ export default function Home() {
 
         <div className="sm:pt-20 col-span-2">
           <p className="text-5xl font-bold md:block hidden">Jesse Nnorom</p>
-          <p className="mt-5 text-gray-600 w-11/12 md:mx-0 mx-auto text-justify md:w-4/5 ">
+          <p className="mt-5 text-gray-600 w-11/12 md:mx-0 mx-auto text-justify md:w-4/5 text-focus-in">
             {Bio}
           </p>
         </div>
       </div>
       {/* services that I provide */}
       <Services />
+      <Works />
     </main>
   );
 }
