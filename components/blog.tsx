@@ -9,7 +9,7 @@ export default function Blog() {
       <p className="text-5xl font-bold font-montserrat">Blog</p>
 
       <div className="grid md:grid-cols-2 gap-4">
-        <div className="relative h-96 mt-6 bg-contain cursor-pointer bg-[url('/blog1.png')]">
+        <div className="relative h-60 md:h-96 mt-6 bg-contain cursor-pointer bg-[url('/blog1.png')]">
           {/* Overlay */}
           <div className="absolute inset-0 bg-black opacity-0 hover:opacity-70  bg-top transition-opacity duration-300 flex flex-col justify-center"></div>
         </div>
