@@ -29,7 +29,7 @@ export default function Works() {
           </div>
 
           {/* Image */}
-          <img src="library.png" className="w-[90%] flex mx-auto " />
+          <img src="library.png" className="w-[90%] flex mx-auto " loading="lazy" />
         </Link>
         {/* Blog */}
         <Link
@@ -44,7 +44,7 @@ export default function Works() {
           </div>
 
           {/* Image */}
-          <img src="blog.png" className="w-[90%] flex mx-auto " />
+          <img src="blog.png" className="w-[90%] flex mx-auto " loading="lazy"/>
         </Link>
         {/* crypto */}
         <Link
@@ -59,7 +59,7 @@ export default function Works() {
           </div>
 
           {/* Image */}
-          <img src="crypto.png" className="w-[90%] flex mx-auto " />
+          <img src="crypto.png" className="w-[90%] flex mx-auto " loading="lazy" />
         </Link>
       </div>
     </div>

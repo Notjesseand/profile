@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Nav from "@/components/nav";
 import "../app/cursor.css";
@@ -29,6 +30,7 @@ export default function Home() {
             layout="fill"
             objectFit="cover"
             quality={100}
+            loading="eager"
           />
         </div>
 

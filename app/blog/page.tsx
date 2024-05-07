@@ -7,6 +7,7 @@ import { collection, addDoc, getDocs } from "firebase/firestore";
 import { doc, setDoc } from "firebase/firestore";
 import { Spinner } from "@material-tailwind/react";
 import Support from "@/components/support";
+import Image from "next/image";
 import Contact from "@/components/contact";
 
 export default function Page() {
