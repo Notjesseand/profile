@@ -4,4 +4,4 @@ export const Bio = `  Hello! I’m Jesse, and I find joy in crafting digital exp
             underlying technologies. As a creative developer, I specialize in
             leveraging modern tools and frameworks like React.js and Next.js to
             bring ideas to life. With a solid foundation in PHP and Laravel, I
-            embrace the challenge of building robust, scalable web applications.`;
+            embrace the challenge of building scalable web applications.`;
