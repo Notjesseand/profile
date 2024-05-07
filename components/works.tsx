@@ -39,7 +39,7 @@ export default function Works() {
           {/* Overlay */}
           <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-center">
             <p className="text-white text-3xl font-bold font-montserrat text-center z-50 relative">
-              Blog Site
+              Landing Page
             </p>
           </div>
 
