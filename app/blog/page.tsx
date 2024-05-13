@@ -275,22 +275,28 @@ export default function Page() {
               />
               <Textarea onChange={handleCommentChange} value={comment} />
 
-              <button
-                onClick={addData}
-                className=" border-2 rounded-full h-12 w-48 text-center flex justify-center items-center  mt-6 hover:bg-black hover:text-white"
-              >
-                {isLoading ? (
-                  <Spinner className="animate-spin text-orange-600 " />
+              <div className="h-20 flex ">
+                {comment && name && email ? (
+                  <button
+                    onClick={addData}
+                    className=" border-2 rounded-full h-12 w-48 text-center flex justify-center items-center  mt-6 hover:bg-black hover:text-white"
+                  >
+                    {isLoading ? (
+                      <Spinner className="animate-spin text-orange-600 " />
+                    ) : (
+                      "Send Comment"
+                    )}
+                  </button>
                 ) : (
-                  "Send Comment"
+                  ""
                 )}
-              </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Support/>  
-      <Contact/>
+      <Support />
+      <Contact />
     </div>
   );
 }
