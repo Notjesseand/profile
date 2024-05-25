@@ -20,7 +20,7 @@ export function Sidebar() {
       <SheetTrigger asChild>
         {/* <Button variant="outline">Open</Button> */}
         <button className="rounded-full aspect-square p-2 relative -mt-1 bg-white">
-          <HiMiniBars2 className="md:text-5xl text-3xl"/>
+          <HiMiniBars2 className="md:text-5xl text-3xl" />
         </button>
       </SheetTrigger>
       <SheetContent>
@@ -38,8 +38,8 @@ export function Sidebar() {
             <Link href="/resume" className="flex justify-center">
               Resume
             </Link>
-           
-            <Link href="/blog" className="flex justify-center">
+
+            <Link href="/blogs" className="flex justify-center">
               Blog
             </Link>
             <Link href="" className="flex justify-center">
