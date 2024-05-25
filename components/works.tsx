@@ -29,7 +29,29 @@ export default function Works() {
           </div>
 
           {/* Image */}
-          <img src="library.png" className="w-[90%] flex mx-auto " loading="lazy" />
+          <img
+            src="library.png"
+            className="w-[90%] flex mx-auto "
+            loading="lazy"
+          />
+        </Link>
+        {/* crypto */}
+        <Link
+          href="https://swapp-nu.vercel.app/"
+          className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
+        >
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-center">
+            <p className="text-white text-3xl font-bold font-montserrat text-center z-50 relative">
+              Crypto Site
+            </p>
+          </div>
+
+          {/* Image */}
+          <img
+            src="https://res.cloudinary.com/dv62ty87r/image/upload/v1716621530/Screenshot_2024-05-24_101717_qots9g.png"
+            className="w-[90%] flex mx-auto "
+          />
         </Link>
         {/* Blog */}
         <Link
@@ -44,22 +66,11 @@ export default function Works() {
           </div>
 
           {/* Image */}
-          <img src="blog.png" className="w-[90%] flex mx-auto " loading="lazy"/>
-        </Link>
-        {/* crypto */}
-        <Link
-          href="https://realgoldstation.vercel.app/"
-          className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
-        >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black opacity-0 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-center">
-            <p className="text-white text-3xl font-bold font-montserrat text-center z-50 relative">
-              Crypto Site
-            </p>
-          </div>
-
-          {/* Image */}
-          <img src="crypto.png" className="w-[90%] flex mx-auto " loading="lazy" />
+          <img
+            src="blog.png"
+            className="w-[90%] flex mx-auto "
+            loading="lazy"
+          />
         </Link>
       </div>
     </div>

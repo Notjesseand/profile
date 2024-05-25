@@ -12,8 +12,6 @@ import Link from "next/link";
 const Page = ({ params }: { params: any }) => {
   const id = params.id;
 
-  // const [blogPost, setBlogPost] = <Any>useState();
-
   const [blogPost, setBlogPost] = useState<any>();
   const [loading, setLoading] = useState(true);
 
@@ -60,6 +58,7 @@ const Page = ({ params }: { params: any }) => {
       await setDoc(doc(db, "comments", name), {
         name: name,
         email: email,
+        blogPost: blogPost.title,
         comment: comment,
       });
       setName("");
