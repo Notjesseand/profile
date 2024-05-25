@@ -8,6 +8,7 @@ import Support from "@/components/support";
 import { Textarea } from "@/components/ui/textarea";
 import { Spinner } from "@material-tailwind/react";
 import { useToast } from "@/components/ui/use-toast";
+import { Timestamp } from "firebase/firestore";
 // import Link from "next/link";
 
 const Page = ({ params }: { params: any }) => {
@@ -78,6 +79,26 @@ const Page = ({ params }: { params: any }) => {
     }
   };
 
+  // formatting the date timestamp
+  const firestoreTimestamp = blogPost?.date.seconds;
+
+  const formatFirestoreTimestamp = (firestoreTimestamp: any) => {
+    const date = new Timestamp(
+      blogPost?.date.seconds,
+      blogPost?.date.nanoseconds
+    ).toDate();
+
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    // @ts-ignore
+    const formattedDate = date.toLocaleDateString("en-US", options);
+
+    return formattedDate;
+  };
+
+  // Example usage
+  const formattedDate = formatFirestoreTimestamp(firestoreTimestamp);
+  console.log(formattedDate); // Outputs the formatted date
+
   if (loading) {
     return (
       <div className="h-screen w-full flex justify-center items-center">
@@ -94,7 +115,7 @@ const Page = ({ params }: { params: any }) => {
       <div className="md:pt-7 px-4 md:px-32">
         <div className="flex items-center ">
           Blog <div className="w-6 mx-3 h-[1px]  border items-center flex" />
-          <span className="text-slate-600 ">1 Oct 2022</span>
+          <span className="text-slate-600 ">{formattedDate}</span>
         </div>
         <p className="text-4xl mt-5  md:text-6xl font-bold font-montserrat  tracking-wider">
           {blogPost?.title}
