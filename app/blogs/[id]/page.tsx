@@ -7,7 +7,8 @@ import Contact from "@/components/contact";
 import Support from "@/components/support";
 import { Textarea } from "@/components/ui/textarea";
 import { Spinner } from "@material-tailwind/react";
-import Link from "next/link";
+import { useToast } from "@/components/ui/use-toast";
+// import Link from "next/link";
 
 const Page = ({ params }: { params: any }) => {
   const id = params.id;
@@ -41,6 +42,7 @@ const Page = ({ params }: { params: any }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
 
   const handleNameChange = (event: any) => {
     setName(event.target.value);
@@ -61,6 +63,10 @@ const Page = ({ params }: { params: any }) => {
         blogPost: blogPost.title,
         comment: comment,
       });
+      toast({
+        title: "Success",
+        description: "Comment Sent",
+      });
       setName("");
       setEmail("");
       setComment("");
@@ -75,7 +81,7 @@ const Page = ({ params }: { params: any }) => {
   if (loading) {
     return (
       <div className="h-screen w-full flex justify-center items-center">
-        <Spinner className="h-12 w-12 flex text-orange-600" />
+        <Spinner className="h-12 w-12 flex text-slate-700" />
       </div>
     );
   }

@@ -18,7 +18,7 @@ export default function Works() {
       <div className="grid md:grid-cols-3 gap-5 pt-5">
         {/* digital library */}
         <Link
-          href="https://thuggers-library.vercel.app/browse"
+          href="https://thuggers-library.vercel.app/"
           className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
         >
           {/* Overlay */}
