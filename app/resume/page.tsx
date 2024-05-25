@@ -1,8 +1,8 @@
-import React from 'react'
-import Nav from '@/components/nav'
-import Support from '@/components/support';
-import Contact from '@/components/contact';
-import Link from 'next/link';
+import React from "react";
+import Nav from "@/components/nav";
+import Support from "@/components/support";
+import Contact from "@/components/contact";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -63,7 +63,9 @@ export default function Page() {
             {/* scholarly */}
             <div className="w-full py-3 flex items-center justify-between">
               <div>
-                <p className="text-lg font-semibold">University Of Nigeria, Nsukka</p>
+                <p className="text-lg font-semibold">
+                  University Of Nigeria, Nsukka
+                </p>
                 <p className="text-slate-500">Collge</p>
               </div>
               {/* duration */}
@@ -79,13 +81,15 @@ export default function Page() {
               </div>
               {/* duration */}
               <div className="border-2 px-4 py-1 rounded text-slate-500">
-                2023-2023
+                2017-2019
               </div>
             </div>
             {/* ECR Tech */}
             <div className="w-full py-3 flex items-center justify-between">
               <div>
-                <p className="text-lg font-semibold">Caray College International</p>
+                <p className="text-lg font-semibold">
+                  Caray College International
+                </p>
                 <p className="text-slate-500">Middle School</p>
               </div>
               {/* duration */}
@@ -97,10 +101,15 @@ export default function Page() {
         </div>
 
         {/*  */}
-        <Link href="/resume.pdf" className='text-black text-center flex py-20 justify-center underline'>Download CV</Link>
+        <Link
+          href="/resume.pdf"
+          className="text-black text-center flex py-20 justify-center underline"
+        >
+          Download CV
+        </Link>
       </div>
-      <Support/>
-      <Contact/>
+      <Support />
+      <Contact />
     </div>
   );
 }

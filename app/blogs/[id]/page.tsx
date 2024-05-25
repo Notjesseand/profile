@@ -13,10 +13,10 @@ import { Timestamp } from "firebase/firestore";
 
 const Page = ({ params }: { params: any }) => {
   const id = params.id;
-
   const [blogPost, setBlogPost] = useState<any>();
   const [loading, setLoading] = useState(true);
 
+  // fetching the blog post based on the id
   useEffect(() => {
     const fetchBlog = async () => {
       try {
@@ -55,6 +55,7 @@ const Page = ({ params }: { params: any }) => {
     setEmail(event.target.value);
   };
 
+  // adding comments to firebase
   const addData = async () => {
     setIsLoading(true);
     try {
