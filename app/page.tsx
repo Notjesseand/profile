@@ -30,22 +30,19 @@ export default function Home() {
       <p className="font-custom text-slate-500 md:hidden text-left pl-[20%]">
         web developer
       </p>
-      <div className="pt-10 sm:px-20 sm:gap-40 grid md:grid-cols-3 grid-cols-1">
+      <div className="pt-10  md:px-20 lg:gap-40 grid lg:grid-cols-3 grid-cols-1 ">
         {/* profile */}
-        <div className="transform-banner flex md:h-[75vh] h-[50vh] w-4/5 mx-auto md:w-96 relative justify-center">
-          <Image
+        <div className="transform-banner flex  max-w-[80%] md:max-w-full mx-auto md:w-96 relative justify-center">
+          <img
             src="/profile.jpg"
             alt=""
-            className="h-auto w-4/5 rounded-lg object-cover flex mx-auto justify-center"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-            loading="eager"
+            className="h-auto  rounded-lg object-cover flex mx-auto justify-center max-h-[70vh]"
+           
           />
         </div>
 
         <div className="sm:pt-20 col-span-2">
-          <p className="text-5xl font-bold md:block hidden">Jesse Nnorom</p>
+          <p className="text-5xl font-bold md:block hidden text-center lg:text-start">Jesse Nnorom</p>
           <motion.div
           // @ts-ignore
           ref={ref}
@@ -55,7 +52,7 @@ export default function Home() {
           transition={{ duration: 1 }}
         >
 
-          <p className="mt-5 text-gray-600 w-11/12 md:mx-0 mx-auto text-justify md:w-4/5 text-focus-in">
+          <p className="mt-5 text-gray-600 w-11/12 lg:mx-0 mx-auto text-justify flex lg:w-4/5 text-focus-in">
             {Bio}
           </p>
         </motion.div>

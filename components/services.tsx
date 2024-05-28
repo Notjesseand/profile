@@ -21,7 +21,7 @@ export default function Services() {
         Services
       </p>
       {/* services */}
-      <div className="grid md:grid-cols-3 px-5 md:px-20 gap-x-2 gap-y-4 pt-5">
+      <div className="grid lg:grid-cols-3 px-5 md:px-20 gap-x-2 gap-y-4 pt-5">
         {/* website design */}
         <motion.div
           // @ts-ignore
