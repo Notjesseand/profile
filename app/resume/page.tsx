@@ -74,9 +74,9 @@ export default function Page() {
           {/* eductation */}
           <motion.div
             // @ts-ignore
-            ref={ref}
+            ref={ref2}
             initial="hidden"
-            animate={isVisible ? "visible" : "hidden"}
+            animate={isVisible2 ? "visible" : "hidden"}
             variants={variantRightToLeft}
             transition={{ duration: 1 }}
           >
