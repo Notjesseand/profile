@@ -36,7 +36,7 @@ export default function Home() {
           <img
             src="/profile.jpg"
             alt=""
-            className="h-auto max-h-[55vh]  rounded-lg object-cover flex mx-auto justify-center md:max-h-[70vh]"
+            className="h-auto max-h-[45vh]  rounded-lg object-cover flex mx-auto justify-center md:max-h-[70vh]"
            
           />
         </div>
