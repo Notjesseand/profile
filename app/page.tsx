@@ -8,10 +8,20 @@ import Works from "@/components/works";
 import Blog from "@/components/blog";
 import Support from "@/components/support";
 import Contact from "@/components/contact";
+import { motion } from "framer-motion";
+import useOnScreen from "@/hooks/scroll";
 
 export default function Home() {
+  const [ref, isVisible] = useOnScreen({ threshold: 0.1 });
+  const variant = {
+    hidden: { opacity: 0, x: -250 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+
+
   return (
-    <main className="bg-slate-50">
+    <main className="bg-slate-50 overflow-hidden">
       <Nav />
       <div className="pt-28"></div>
       <p className="text-5xl font-bold block md:hidden mt-12 text-left pl-[20%] font-custom  ">
@@ -36,9 +46,19 @@ export default function Home() {
 
         <div className="sm:pt-20 col-span-2">
           <p className="text-5xl font-bold md:block hidden">Jesse Nnorom</p>
+          <motion.div
+          // @ts-ignore
+          ref={ref}
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+          variants={variant}
+          transition={{ duration: 1 }}
+        >
+
           <p className="mt-5 text-gray-600 w-11/12 md:mx-0 mx-auto text-justify md:w-4/5 text-focus-in">
             {Bio}
           </p>
+        </motion.div>
         </div>
       </div>
       {/* services that I provide */}
