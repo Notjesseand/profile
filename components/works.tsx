@@ -40,9 +40,9 @@ export default function Works() {
             className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
           >
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-10">
+            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
               <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto" />
-              <p className="text-white text-3xl font-bold font-montserrat text-center z-50 relative">
+              <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
                 Personalized Digital Library
               </p>
             </div>
@@ -68,9 +68,9 @@ export default function Works() {
             className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
           >
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-10">
+            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
               <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto" />
-              <p className="text-white text-3xl font-bold font-montserrat text-center z-50 relative">
+              <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
                 Shopping Site
               </p>
             </div>
@@ -96,9 +96,9 @@ export default function Works() {
             className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
           >
             {/* Overlay */}
-              <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-10">
-              <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto"/>
-              <p className="text-white text-3xl font-bold font-montserrat text-center z-50 relative">
+            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
+              <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto" />
+              <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
                 Crypto Site
               </p>
             </div>
