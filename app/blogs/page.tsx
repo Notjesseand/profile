@@ -11,28 +11,7 @@ import { getDoc, doc } from "firebase/firestore";
 const Page = () => {
   const [blogPost, setBlogPost] = useState();
 
-  // useEffect(() => {
-  //   const fetchBlog = async () => {
-  //     try {
-  //       const docRef = doc(db, "posts", "1");
-  //       const docSnap = await getDoc(docRef);
-
-  //       if (docSnap.exists()) {
-  //         const blog = docSnap.data();
-  //         // @ts-ignore
-  //         setBlogPost(blog);
-  //       } else {
-  //         console.log("No interests document found for the user");
-  //       }
-  //     } catch (error) {
-  //       console.error("Error fetching interests:", error);
-  //     }
-  //   };
-
-  //   fetchBlog();
-  // }, []);
-
-  console.log(blogPost);
+   console.log(blogPost);
 
   return (
     <div className="">
