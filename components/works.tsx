@@ -64,7 +64,7 @@ export default function Works() {
           transition={{ duration: 1 }}
         >
           <Link
-            href="https://seven-lake.vercel.app/"
+            href="https://store-nine-red.vercel.app/"
             className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
           >
             {/* Overlay */}
@@ -77,7 +77,7 @@ export default function Works() {
 
             {/* Image */}
             <img
-              src="https://res.cloudinary.com/dv62ty87r/image/upload/v1716877932/newer/Screenshot-ps-compressed_ghkhic.jpg"
+              src="https://res.cloudinary.com/dv62ty87r/image/upload/v1717077944/store-compressed-2_ea6rqs.jpg"
               className="w-[90%] flex mx-auto "
             />
           </Link>
