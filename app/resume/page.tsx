@@ -126,12 +126,12 @@ export default function Page() {
         </div>
 
         {/*  */}
-        {/* <Link
-          href="/resume.pdf"
+        <Link
+          href="/jesse.pdf"
           className="text-black text-center flex py-20 justify-center underline"
         >
           Download CV
-        </Link> */}
+        </Link>
       </div>
       <Support />
       <Contact />
