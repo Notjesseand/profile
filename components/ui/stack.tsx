@@ -1,5 +1,5 @@
-"use client"
-import React, { useRef, useState } from "react";
+"use client";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,7 +11,6 @@ import "swiper/css/navigation";
 // import required modules
 // import { Pagination, Navigation } from "swiper/modules";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
 
 const Stack = () => {
   const [open, setOpen] = useState(true);
@@ -27,9 +26,7 @@ const Stack = () => {
     "/tailwind.png",
   ];
 
-
-  const pdf = ["/neck.pdf"]
-
+  const pdf = ["/neck.pdf"];
 
   return (
     <div className="w-full md:w-1/2 absolute bottom-0 left-0 bg-slate-600 pl-3 rounded">
