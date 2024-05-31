@@ -26,41 +26,13 @@ export default function Works() {
         </div>
       </div>
       <div className="grid md:grid-cols-3 gap-5 pt-5">
-        {/* digital library */}
-        <motion.div
-          // @ts-ignore
-          ref={ref}
-          initial="hidden"
-          animate={isVisible ? "visible" : "hidden"}
-          variants={variantLeftToRight}
-          transition={{ duration: 1 }}
-        >
-          <Link
-            href="https://thuggers-library.vercel.app/"
-            className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
-          >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
-              <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto" />
-              <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
-                Personalized Digital Library
-              </p>
-            </div>
-
-            {/* Image */}
-            <img
-              src="https://res.cloudinary.com/dv62ty87r/image/upload/v1716878955/library-ps-compressed_lqmctm.jpg"
-              className="w-[90%] flex mx-auto "
-            />
-          </Link>
-        </motion.div>
-        {/* Blog */}
+        {/* Thugger's store */}
         <motion.div
           // @ts-ignore
           ref={ref2}
           initial="hidden"
           animate={isVisible2 ? "visible" : "hidden"}
-          variants={variantBottomToTop}
+          variants={variantLeftToRight}
           transition={{ duration: 1 }}
         >
           <Link
@@ -82,6 +54,35 @@ export default function Works() {
             />
           </Link>
         </motion.div>
+        {/* digital library */}
+        <motion.div
+          // @ts-ignore
+          ref={ref}
+          initial="hidden"
+          animate={isVisible ? "visible" : "hidden"}
+          variants={variantBottomToTop}
+          transition={{ duration: 1 }}
+        >
+          <Link
+            href="https://thuggers-library.vercel.app/"
+            className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
+              <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto" />
+              <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
+                Personalized Digital Library
+              </p>
+            </div>
+
+            {/* Image */}
+            <img
+              src="https://res.cloudinary.com/dv62ty87r/image/upload/v1716878955/library-ps-compressed_lqmctm.jpg"
+              className="w-[90%] flex mx-auto "
+            />
+          </Link>
+        </motion.div>
+
         {/* crypto */}
         <motion.div
           // @ts-ignore
