@@ -79,7 +79,7 @@ export default function Services() {
             <p className="text-slate-500 mt-4">
               I have a passion for organizing and optimizing data. My expertise
               lies in proficiently managing databases using technologies such as
-              MySQL, and Firebase and Supabase.
+              MySQL, Firebase and Supabase.
             </p>
           </div>
         </motion.div>
