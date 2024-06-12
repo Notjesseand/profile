@@ -38,6 +38,7 @@ export default function Works() {
           <Link
             href="https://store-nine-red.vercel.app/"
             className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
+            target="_blank"
           >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
@@ -66,6 +67,7 @@ export default function Works() {
           <Link
             href="https://thuggers-library.vercel.app/"
             className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
+            target="_blank"
           >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
@@ -95,6 +97,7 @@ export default function Works() {
           <Link
             href="https://swapp-nu.vercel.app/"
             className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
+            target="_blank"
           >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
