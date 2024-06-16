@@ -38,7 +38,7 @@ export default function Services() {
             <p className="text-slate-500 mt-4">
               I enjoy bringing ideas to life in the browser. I design websites
               and web applications using technologies like React.js, Next.js,
-              Firebase and SQL
+              Tailwind.css, Shadcn/ui, and animation libraries
             </p>
           </div>
         </motion.div>
@@ -55,10 +55,13 @@ export default function Services() {
         >
           <div className="bg-white py-16 cursor- shadow-sm  text-start px-6 md:px-10 ">
             <CiServer className="text-7xl flex mt-3" />
-            <p className="text-2xl font-semibold mt-1">Backend Development</p>
+            <p className="text-2xl font-semibold mt-1">
+              Backend and RESTful API Development
+            </p>
             <p className="text-slate-500 mt-4">
-              I am a fan of server-side technologies. I use PHP, Laravel, and
-              Firebase for backend development
+              I am proficient in creating and managing RESTful APIs. I use
+              Node.js and Express.js to build robust and scalable APIs, ensuring
+              seamless communication between the client and server.
             </p>
           </div>
         </motion.div>
@@ -75,11 +78,14 @@ export default function Services() {
         >
           <div className="bg-white py-16 cursor- shadow-sm  text-start px-6 md:px-10 ">
             <FaDatabase className="text-7xl flex mt-3" />
-            <p className="text-2xl font-semibold mt-1">Database management</p>
+            <p className="text-2xl font-semibold mt-1">
+              Database Design
+            </p>
             <p className="text-slate-500 mt-4">
-              I have a passion for organizing and optimizing data. My expertise
-              lies in proficiently managing databases using technologies such as
-              MySQL, Firebase and Supabase.
+              I have extensive experience in managing and interacting with
+              databases. I use MongoDB for its flexibility and scalability, and
+              Firebase for real-time data synchronization and its integration
+              with the Google Cloud platform.
             </p>
           </div>
         </motion.div>
