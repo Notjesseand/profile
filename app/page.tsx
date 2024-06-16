@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Nav from "@/components/nav";
 import "../app/cursor.css";
-import {Bio} from "../app/data" 
+import { Bio } from "../app/data";
 import Services from "@/components/services";
 import Works from "@/components/works";
 import Blog from "@/components/blog";
@@ -18,12 +18,10 @@ export default function Home() {
     visible: { opacity: 1, x: 0 },
   };
 
-
-
   return (
     <main className="bg-slate-50 overflow-hidden">
       <Nav />
-      <div className="pt-28"></div>
+      <div className="pt-20 md:pt-28"></div>
       <p className="text-5xl font-bold block md:hidden mt-12 text-left pl-[20%] font-custom  ">
         Jesse
       </p>
@@ -32,30 +30,30 @@ export default function Home() {
       </p>
       <div className="pt-10  md:px-20 lg:gap-40 grid lg:grid-cols-3 grid-cols-1 ">
         {/* profile */}
-        <div className="transform-banner flex  max-w-[80%] md:max-w-full mx-auto md:w-96 relative justify-center">
+        <div className="transform-banner flex max-w-[80%] md:max-w-full mx-auto md:w-96 relative justify-center">
           <img
             src="/profile.jpg"
             alt=""
-            className="h-auto max-h-[45vh]  rounded-lg object-cover flex mx-auto justify-center md:max-h-[70vh]"
-           
+            className="h-auto max-h-[50vh]  rounded-lg object-cover flex mx-auto justify-center md:max-h-[70vh]"
           />
         </div>
 
         <div className="sm:pt-20 col-span-2">
-          <p className="text-5xl font-bold md:block hidden text-center lg:text-start">Jesse Nnorom</p>
-          <motion.div
-          // @ts-ignore
-          ref={ref}
-          initial="hidden"
-          animate={isVisible ? "visible" : "hidden"}
-          variants={variant}
-          transition={{ duration: 1 }}
-        >
-
-          <p className="mt-5 text-gray-600 w-11/12 lg:mx-0 mx-auto text-justify flex lg:w-4/5 text-focus-in">
-            {Bio}
+          <p className="text-5xl font-bold md:block hidden text-center lg:text-start">
+            Jesse Nnorom
           </p>
-        </motion.div>
+          <motion.div
+            // @ts-ignore
+            ref={ref}
+            initial="hidden"
+            animate={isVisible ? "visible" : "hidden"}
+            variants={variant}
+            transition={{ duration: 1 }}
+          >
+            <p className="mt-5 text-gray-600 w-11/12 lg:mx-0 mx-auto text flex lg:w-4/5 text-focus-in">
+              {Bio}
+            </p>
+          </motion.div>
         </div>
       </div>
       {/* services that I provide */}
