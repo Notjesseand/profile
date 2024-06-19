@@ -2,7 +2,6 @@
 import React from "react";
 import { Sidebar } from "./sidebar";
 import Link from "next/link";
-import { useToast } from "./ui/use-toast";
 
 export default function nav() {
   return (
