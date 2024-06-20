@@ -2,6 +2,8 @@
 import React from "react";
 import { Sidebar } from "./sidebar";
 import Link from "next/link";
+const jaja = ""
+
 
 export default function nav() {
   return (
