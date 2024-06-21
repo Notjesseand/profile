@@ -18,6 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link
+          rel="icon"
+          href="https://res.cloudinary.com/dv62ty87r/image/upload/v1716538239/Premium_Vector___Wolf_tech_modern_simple_logo_icon_ideas-removebg-preview_je6aex.png"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
