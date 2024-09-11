@@ -32,7 +32,7 @@ export default function Home() {
         {/* profile */}
         <div className="transform-banner flex max-w-[80%] md:max-w-full mx-auto md:w-96 relative justify-center">
           <img
-            src="/profile.jpg"
+            src="/Jesse.jpg"
             alt=""
             className="h-auto max-h-[50vh]  rounded-lg object-cover flex mx-auto justify-center md:max-h-[70vh]"
           />
