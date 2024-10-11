@@ -28,10 +28,12 @@ export default function Home() {
       <p className="font-custom text-slate-500 md:hidden text-left pl-[20%]">
         web developer
       </p>
-      <div className="pt-10  md:px-14 lg:gap-40 grid lg:grid-cols-3 grid-cols-1 ">
+      <div className="pt-10  md:px-14 lg:gap-20 grid lg:grid-cols-3 grid-cols-1 ">
         {/* profile */}
-        <div className="transform-banner flex  h-[70vh] mx-auto relative justify-center aspect-[3:2]
-        ">
+        <div
+          className="transform-banner flex h-[60vh] sm:h-[70vh] mx-auto relative justify-center px-7 sm:px-0 w-full
+        "
+        >
           <img
             src="/Jesse.jpg"
             alt=""
