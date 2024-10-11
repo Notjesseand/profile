@@ -28,13 +28,14 @@ export default function Home() {
       <p className="font-custom text-slate-500 md:hidden text-left pl-[20%]">
         web developer
       </p>
-      <div className="pt-10  md:px-20 lg:gap-40 grid lg:grid-cols-3 grid-cols-1 ">
+      <div className="pt-10  md:px-14 lg:gap-40 grid lg:grid-cols-3 grid-cols-1 ">
         {/* profile */}
-        <div className="transform-banner flex max-w-[80%] md:max-w-full mx-auto md:w-96 relative justify-center">
+        <div className="transform-banner flex  h-[70vh] mx-auto relative justify-center aspect-[3:2]
+        ">
           <img
             src="/Jesse.jpg"
             alt=""
-            className="h-auto max-h-[50vh]  rounded-lg object-cover flex mx-auto justify-center md:max-h-[70vh]"
+            className="h-[100%] max-h-[70vh]  rounded-lg object-cover flex mx-auto justify-center md:h-[100vh] aspect-square"
           />
         </div>
 

@@ -65,7 +65,7 @@ export default function Works() {
           transition={{ duration: 1 }}
         >
           <Link
-            href="https://thuggers-library.vercel.app/"
+            href="https://rubix-nine.vercel.app/"
             className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
             target="_blank"
           >
@@ -73,13 +73,16 @@ export default function Works() {
             <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
               <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto" />
               <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
-                Personalized Digital Library
+                E-Commerce website{" "}
+                <span className="text-base flex mx-auto justify-center">
+                  (with node.js/express.js backend){" "}
+                </span>
               </p>
             </div>
 
             {/* Image */}
             <img
-              src="https://res.cloudinary.com/dv62ty87r/image/upload/v1716878955/library-ps-compressed_lqmctm.jpg"
+              src="https://res.cloudinary.com/dv62ty87r/image/upload/v1728659940/rubix_e6xs0g.png"
               className="w-[90%] flex mx-auto "
             />
           </Link>
