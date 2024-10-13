@@ -17,7 +17,7 @@ export default function Home() {
     hidden: { opacity: 0, x: -250 },
     visible: { opacity: 1, x: 0 },
   };
-
+ cont ja = ""
   return (
     <main className="bg-slate-50 overflow-hidden">
       <Nav />
