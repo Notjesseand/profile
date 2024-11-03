@@ -10,6 +10,7 @@ import Support from "@/components/support";
 import Contact from "@/components/contact";
 import { motion } from "framer-motion";
 import useOnScreen from "@/hooks/scroll";
+import profile from "@/public/profile.jpg";
 
 export default function Home() {
   const [ref, isVisible] = useOnScreen({ threshold: 0.1 });
@@ -17,7 +18,7 @@ export default function Home() {
     hidden: { opacity: 0, x: -250 },
     visible: { opacity: 1, x: 0 },
   };
-  const jaja = "jjjjjjj";
+  const jaja = "jjjjjv jj";
 
   return (
     <main className="bg-slate-50 overflow-hidden">
@@ -36,7 +37,7 @@ export default function Home() {
         "
         >
           <img
-            src="/Jesse.jpg"
+            src="/profile.jpg"
             alt=""
             className="h-[100%] max-h-[70vh]  rounded-lg object-cover flex mx-auto justify-center md:h-[100vh] aspect-square"
           />
