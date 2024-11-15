@@ -19,7 +19,7 @@ export default function Home() {
     visible: { opacity: 1, x: 0 },
   };
 
-  const jaja = "efger"
+  const jaja = "efdsger";
 
   return (
     <main className="bg-slate-50 overflow-hidden">
