@@ -1,3 +1,4 @@
+// app/blogs/[id]/page.tsx
 "use client";
 import React, { useState, useEffect } from "react";
 import { db } from "@/config/firebase";
@@ -121,7 +122,7 @@ const Page = ({ params }: { params: any }) => {
         <p className="text-4xl mt-5  md:text-6xl font-bold font-montserrat  tracking-wider">
           {blogPost?.title}
         </p>
-        <img src={blogPost?.image} alt="" className="w-full mt-8" />
+        <img src={blogPost?.image} alt="" className="w-full mt-8 max-h-[450px] object-cover" />
 
         {/* blog post */}
         <div className="leading-7 md:leading-8 text-justify">
