@@ -36,6 +36,27 @@ export default function Page() {
               <div className="font-custom font-semibold text-xl text-slate-600 border-b-2 pb-2 mb-4 w-full flex">
                 Experience
               </div>
+              <div className="w-full py-3 flex items-center justify-between">
+                <div>
+                  <p className="text-lg font-semibold">Grein-Eco</p>
+                  <p className="text-slate-500">Web Developer</p>
+                </div>
+                {/* duration */}
+                <div className="border-2 px-4 py-1 rounded text-slate-500">
+                  2025
+                </div>
+              </div>
+              {/* logic leads */}
+              <div className="w-full py-3 flex items-center justify-between">
+                <div>
+                  <p className="text-lg font-semibold">Logic Leads</p>
+                  <p className="text-slate-500">Web Developer</p>
+                </div>
+                {/* duration */}
+                <div className="border-2 px-4 py-1 rounded text-slate-500">
+                  2024-Present
+                </div>
+              </div>
               {/* scholarly */}
               <div className="w-full py-3 flex items-center justify-between">
                 <div>

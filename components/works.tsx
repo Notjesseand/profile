@@ -44,7 +44,7 @@ export default function Works() {
             <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
               <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto" />
               <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
-                Shopping Site
+                E-commerce website{" "}
               </p>
             </div>
 
@@ -98,7 +98,7 @@ export default function Works() {
           transition={{ duration: 1 }}
         >
           <Link
-            href="https://swapp-nu.vercel.app/"
+            href="https://online-banking-xi-seven.vercel.app/"
             className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
             target="_blank"
           >
@@ -106,15 +106,12 @@ export default function Works() {
             <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
               <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto" />
               <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
-                Crypto Site
+                Online Payment Site
               </p>
             </div>
 
             {/* Image */}
-            <img
-              src="https://res.cloudinary.com/dv62ty87r/image/upload/v1716621530/Screenshot_2024-05-24_101717_qots9g.png"
-              className="w-[90%] flex mx-auto "
-            />
+            <img src="/nexxapay.png" className="w-[90%] flex mx-auto " />
           </Link>
         </motion.div>
       </div>
