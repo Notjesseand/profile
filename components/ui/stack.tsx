@@ -16,13 +16,14 @@ const Stack = () => {
   const [open, setOpen] = useState(true);
 
   const icons = [
+    "/react.png",
+    "/native.png",
+    "/js.png",
+    "/laravel.png",
     "/bootstrap.png",
     "/css.png",
     "/html.png",
-    "/js.png",
-    "/laravel.png",
     "/php.png",
-    "/react.png",
     "/tailwind.png",
   ];
 

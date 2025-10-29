@@ -76,7 +76,7 @@ export default function Page() {
                 </div>
                 {/* duration */}
                 <div className="border-2 px-4 py-1 rounded text-slate-500">
-                  2023-2023
+                  2022
                 </div>
               </div>
               {/* ECR Tech */}

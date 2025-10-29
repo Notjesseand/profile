@@ -9,8 +9,8 @@ export default function Support() {
       <div className="absolute bg-black h-full w-full opacity-70"></div>
       <div className="z-50 pl-6 md:pl-16 pr-2 mb-20">
         <p className="text-white text-4xl font-montserrat font-semibold">
-          Need help with professional <br className="hidden md:block" />{" "}
-          support? Let&apos;s work together!
+          Building something awesome? <br className="hidden md:block" />{" "}
+          Let&apos;s bring it to life.
         </p>
         <Link
           href="mailto:jessennorom@gmail.com"
