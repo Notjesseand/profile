@@ -26,42 +26,13 @@ export default function Works() {
         </div>
       </div>
       <div className="grid md:grid-cols-3 gap-5 pt-5">
-        {/* Thugger's store */}
-        <motion.div
-          // @ts-ignore
-          ref={ref2}
-          initial="hidden"
-          animate={isVisible2 ? "visible" : "hidden"}
-          variants={variantLeftToRight}
-          transition={{ duration: 1 }}
-        >
-          <Link
-            href="https://store-nine-red.vercel.app/"
-            className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
-            target="_blank"
-          >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
-              <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto" />
-              <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
-                E-commerce website{" "}
-              </p>
-            </div>
-
-            {/* Image */}
-            <img
-              src="https://res.cloudinary.com/dv62ty87r/image/upload/v1717077944/store-compressed-2_ea6rqs.jpg"
-              className="w-[90%] flex mx-auto "
-            />
-          </Link>
-        </motion.div>
-        {/* digital library */}
+        {/* Rubix */}
         <motion.div
           // @ts-ignore
           ref={ref}
           initial="hidden"
           animate={isVisible ? "visible" : "hidden"}
-          variants={variantBottomToTop}
+          variants={variantLeftToRight}
           transition={{ duration: 1 }}
         >
           <Link
@@ -75,7 +46,7 @@ export default function Works() {
               <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
                 E-Commerce website{" "}
                 <span className="text-base flex mx-auto justify-center">
-                  (with node.js/express.js backend){" "}
+                  Next.js, Shad CN UI
                 </span>
               </p>
             </div>
@@ -83,6 +54,39 @@ export default function Works() {
             {/* Image */}
             <img
               src="https://res.cloudinary.com/dv62ty87r/image/upload/v1728659940/rubix_e6xs0g.png"
+              className="w-[90%] flex mx-auto "
+            />
+          </Link>
+        </motion.div>
+
+        {/* Thugger's store */}
+        <motion.div
+          // @ts-ignore
+          ref={ref2}
+          initial="hidden"
+          animate={isVisible2 ? "visible" : "hidden"}
+          variants={variantBottomToTop}
+          transition={{ duration: 1 }}
+        >
+          <Link
+            href="https://store-nine-red.vercel.app/"
+            className="relative h-[420px] md:h-[500px] bg-[#404258ba] cursor-pointer hover:scale-95 transition-all duration-500 flex flex-col justify-center"
+            target="_blank"
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80  transition-opacity duration-300 flex flex-col justify-end pb-4 sm:pb-10">
+              <HiOutlineExternalLink className="flex text-4xl hover:text-blue-500 relative  z-50 text-white mx-auto" />
+              <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
+                E-commerce website{" "}
+              </p>
+              <span className="text-base flex mx-auto justify-center z-50 relative text-white font-semibold">
+                Next.js, Shad CN UI
+              </span>
+            </div>
+
+            {/* Image */}
+            <img
+              src="https://res.cloudinary.com/dv62ty87r/image/upload/v1717077944/store-compressed-2_ea6rqs.jpg"
               className="w-[90%] flex mx-auto "
             />
           </Link>
@@ -108,6 +112,9 @@ export default function Works() {
               <p className="text-white text-xl sm:text-2xl font-bold font-montserrat text-center z-50 relative">
                 Online Payment Site
               </p>
+              <span className="text-base flex mx-auto justify-center z-50 relative text-white font-semibold">
+                Next.js, Shad CN UI, Express.js
+              </span>
             </div>
 
             {/* Image */}
