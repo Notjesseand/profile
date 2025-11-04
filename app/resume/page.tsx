@@ -148,7 +148,7 @@ export default function Page() {
 
         {/*  */}
         <Link
-          href="/jesse.pdf"
+          href="/Jesse-Nnorom.pdf"
           className="text-black text-center flex py-20 justify-center underline"
         >
           Download CV
