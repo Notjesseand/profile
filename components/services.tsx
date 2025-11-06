@@ -202,7 +202,7 @@ export default function Services() {
               Cross‑platform App Development
             </p>
             <p className="text-slate-500 mt-4">
-              With React Native, I build performant mobile applications that run
+              With React Native, I build mobile applications that run
               seamlessly on both iOS and Android, sharing a single codebase
               while delivering native‑like user experiences.
             </p>
