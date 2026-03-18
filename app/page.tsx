@@ -5,7 +5,7 @@ import "../app/cursor.css";
 import { Bio } from "../app/data";
 import Services from "@/components/services";
 import Works from "@/components/works";
-import Blog from "@/components/blog";
+// import Blog from "@/components/blog";
 import Support from "@/components/support";
 import Contact from "@/components/contact";
 import { motion } from "framer-motion";
@@ -20,13 +20,13 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-slate-50 overflow-hidden">
+    <main className="bg-black text-white overflow-hidden">
       <Nav />
       <div className="pt-20 md:pt-28"></div>
-      <p className="text-5xl font-bold block md:hidden mt-12 text-left pl-[20%] font-custom  ">
+      <p className="text-5xl font-bold block md:hidden mt-12 text-left pl-[20%] font-custom text-white">
         Jesse
       </p>
-      <p className="font-custom text-slate-500 md:hidden text-left pl-[20%]">
+      <p className="font-custom text-slate-400 md:hidden text-left pl-[20%]">
         web developer
       </p>
       <div className="pt-10  md:px-14 lg:gap-20 grid lg:grid-cols-3 grid-cols-1 ">
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         <div className="sm:pt-20 col-span-2">
-          <p className="text-5xl font-bold md:block hidden text-center lg:text-start">
+          <p className="text-5xl font-bold md:block hidden text-center lg:text-start text-white">
             Jesse Nnorom
           </p>
           <motion.div
@@ -54,7 +54,7 @@ export default function Home() {
             variants={variant}
             transition={{ duration: 1 }}
           >
-            <p className="mt-5 text-gray-600 w-11/12 lg:mx-0 mx-auto text flex lg:w-4/5 text-focus-in">
+            <p className="mt-5 text-slate-400 w-11/12 lg:mx-0 mx-auto text flex lg:w-4/5 text-focus-in">
               {Bio}
             </p>
           </motion.div>
@@ -63,7 +63,7 @@ export default function Home() {
       {/* services that I provide */}
       <Services />
       <Works />
-      <Blog />
+      {/* <Blog /> */}
       <Support />
       <Contact />
     </main>

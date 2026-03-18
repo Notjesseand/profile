@@ -163,10 +163,10 @@ const Page = () => {
   }
 
   return (
-    <div className="">
+    <div className="bg-black min-h-screen text-white">
       <Nav />
       <div className="w-full pt-36 px-7 md:px-10 lg:px-20">
-        <p className="text-lg md:text-xl font-semibold font-montserrat text-center">
+        <p className="text-lg md:text-xl font-semibold font-montserrat text-center text-white">
           Blog Posts
         </p>
 
@@ -208,22 +208,22 @@ const Page = () => {
                     <p className="text-5xl tracking-widest font-bold font-montserrat">
                       {day}
                     </p>
-                    <p className="text-slate-500 text-sm font-montserrat">
+                    <p className="text-slate-400 text-sm font-montserrat">
                       {month}
                     </p>
-                    <p className="text-slate-500 text-sm font-montserrat">
+                    <p className="text-slate-400 text-sm font-montserrat">
                       {year}
                     </p>
                   </span>
 
                   <div className="flex flex-col justify-center">
-                    <h2 className="text-3xl md:text-4xl font-bold font-montserrat line-clamp-2">
+                    <h2 className="text-3xl md:text-4xl font-bold font-montserrat line-clamp-2 text-white">
                       {blog.title}
                     </h2>
 
                     {/* Extract first paragraph as preview */}
                     <div
-                      className="text-slate-500 font-montserrat mt-3 line-clamp-3"
+                      className="text-slate-400 font-montserrat mt-3 line-clamp-3"
                       dangerouslySetInnerHTML={{
                         __html:
                           blog.post.split("</p>")[0].replace(/<[^>]*>/g, "") +

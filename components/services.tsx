@@ -111,11 +111,11 @@ export default function Services() {
   const [ref4, isVisible4] = useOnScreen({ threshold: 0.1 }); // <-- new ref
 
   return (
-    <div className="bg- pt-14 md:pt-32 overflow-hidden">
-      <p className="capitalize font-custom  text-slate-500 text-lg md:ml-24 ml-7">
+    <div className="pt-14 md:pt-32 overflow-hidden">
+      <p className="capitalize font-custom text-slate-400 text-lg md:ml-24 ml-7">
         SERVICES THAT I PROVIDE
       </p>
-      <p className="font-bold text-5xl md:ml-24 mt-1 font-montserrat ml-7 ">
+      <p className="font-bold text-5xl md:ml-24 mt-1 font-montserrat ml-7 text-white">
         Services
       </p>
       {/* services */}
@@ -130,10 +130,10 @@ export default function Services() {
           transition={{ duration: 1 }}
           className="flex"
         >
-          <div className="bg-white py-16 cursor- shadow-sm  text-start px-6 md:px-10 ">
-            <BsLaptop className="text-7xl flex mt-3" />
-            <p className="text-2xl font-semibold mt-1">Website design</p>
-            <p className="text-slate-500 mt-4">
+          <div className="bg-white/5 border border-white/10 rounded-xl py-16 shadow-lg hover:bg-white/10 transition-all duration-300 text-start px-6 md:px-10">
+            <BsLaptop className="text-7xl flex mt-3 text-blue-400" />
+            <p className="text-2xl font-semibold mt-1 text-white">Website design</p>
+            <p className="text-slate-400 mt-4">
               I enjoy bringing ideas to life in the browser. I design websites
               and web applications using technologies like React.js, Next.js,
               Tailwind.css, Shadcn/ui, and animation libraries
@@ -151,12 +151,12 @@ export default function Services() {
           transition={{ duration: 1 }}
           className="flex"
         >
-          <div className="bg-white py-16 cursor- shadow-sm  text-start px-6 md:px-10 ">
-            <CiServer className="text-7xl flex mt-3" />
-            <p className="text-2xl font-semibold mt-1">
+          <div className="bg-white/5 border border-white/10 rounded-xl py-16 shadow-lg hover:bg-white/10 transition-all duration-300 text-start px-6 md:px-10">
+            <CiServer className="text-7xl flex mt-3 text-purple-400" />
+            <p className="text-2xl font-semibold mt-1 text-white">
               Backend and RESTful API Development
             </p>
-            <p className="text-slate-500 mt-4">
+            <p className="text-slate-400 mt-4">
               I am proficient in creating and managing RESTful APIs. I use
               Node.js and Express.js to build robust and scalable APIs, ensuring
               seamless communication between the client and server.
@@ -174,10 +174,10 @@ export default function Services() {
           transition={{ duration: 1 }}
           className="flex"
         >
-          <div className="bg-white py-16 cursor- shadow-sm  text-start px-6 md:px-10 ">
-            <FaDatabase className="text-7xl flex mt-3" />
-            <p className="text-2xl font-semibold mt-1">Database Design</p>
-            <p className="text-slate-500 mt-4">
+          <div className="bg-white/5 border border-white/10 rounded-xl py-16 shadow-lg hover:bg-white/10 transition-all duration-300 text-start px-6 md:px-10">
+            <FaDatabase className="text-7xl flex mt-3 text-cyan-400" />
+            <p className="text-2xl font-semibold mt-1 text-white">Database Design</p>
+            <p className="text-slate-400 mt-4">
               I have extensive experience in managing and interacting with
               databases. I use MongoDB for its flexibility and scalability, and
               Firebase for real-time data synchronization and its integration
@@ -196,12 +196,12 @@ export default function Services() {
           transition={{ duration: 1 }}
           className="flex"
         >
-          <div className="bg-white py-16 cursor- shadow-sm text-start px-6 md:px-10">
-            <FaMobileAlt className="text-7xl flex mt-3" />
-            <p className="text-2xl font-semibold mt-1">
+          <div className="bg-white/5 border border-white/10 rounded-xl py-16 shadow-lg hover:bg-white/10 transition-all duration-300 text-start px-6 md:px-10">
+            <FaMobileAlt className="text-7xl flex mt-3 text-emerald-400" />
+            <p className="text-2xl font-semibold mt-1 text-white">
               Cross‑platform App Development
             </p>
-            <p className="text-slate-500 mt-4">
+            <p className="text-slate-400 mt-4">
               With React Native, I build mobile applications that run
               seamlessly on both iOS and Android, sharing a single codebase
               while delivering native‑like user experiences.

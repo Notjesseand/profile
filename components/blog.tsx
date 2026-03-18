@@ -142,14 +142,14 @@ export default function Blog() {
     return (
       <div className="px-6 md:px-20 pt-20">
         <div className="animate-pulse">
-          <div className="h-6 bg-slate-200 rounded w-40 mb-2"></div>
-          <div className="h-10 bg-slate-200 rounded w-32"></div>
+          <div className="h-6 bg-white/10 rounded w-40 mb-2"></div>
+          <div className="h-10 bg-white/10 rounded w-32"></div>
           <div className="grid md:grid-cols-2 gap-4 mt-8">
-            <div className="h-96 bg-slate-200 rounded"></div>
+            <div className="h-96 bg-white/10 rounded"></div>
             <div className="space-y-4">
-              <div className="h-8 bg-slate-200 rounded w-12"></div>
-              <div className="h-12 bg-slate-200 rounded"></div>
-              <div className="h-20 bg-slate-200 rounded"></div>
+              <div className="h-8 bg-white/10 rounded w-12"></div>
+              <div className="h-12 bg-white/10 rounded"></div>
+              <div className="h-20 bg-white/10 rounded"></div>
             </div>
           </div>
         </div>
@@ -159,8 +159,8 @@ export default function Blog() {
 
   return (
     <div className="px-6 md:px-20 pt-20">
-      <p className="font-poppins text-lg text-slate-500">RECENT ARTICLES</p>
-      <p className="text-5xl font-bold font-montserrat">Blog</p>
+      <p className="font-poppins text-lg text-slate-400">RECENT ARTICLES</p>
+      <p className="text-5xl font-bold font-montserrat text-white">Blog</p>
 
       {latestPosts.length === 0 ? (
         <p className="text-slate-500 mt-10 text-center">No posts yet.</p>
@@ -191,24 +191,24 @@ export default function Blog() {
               {/* Text */}
               <div className="flex md:pl-10 space-x-5 md:space-x-10">
                 <span className="flex flex-col justify-center text-center md:text-left">
-                  <p className="text-5xl tracking-widest font-bold font-montserrat">
+                  <p className="text-5xl tracking-widest font-bold font-montserrat text-white">
                     {day}
                   </p>
-                  <p className="text-slate-500 text-sm font-montserrat">
+                  <p className="text-slate-400 text-sm font-montserrat">
                     {month}
                   </p>
-                  <p className="text-slate-500 text-sm font-montserrat">
+                  <p className="text-slate-400 text-sm font-montserrat">
                     {year}
                   </p>
                 </span>
 
                 <div className="flex flex-col justify-center">
-                  <h3 className="text-4xl font-bold font-montserrat line-clamp-2">
+                  <h3 className="text-4xl font-bold font-montserrat line-clamp-2 text-white">
                     {post.title}
                   </h3>
 
                   {/* Preview: first paragraph without HTML */}
-                  <p className="text-slate-500 font-montserrat mt-3 line-clamp-3">
+                  <p className="text-slate-400 font-montserrat mt-3 line-clamp-3">
                     {post.post
                       .split("</p>")[0]
                       .replace(/<[^>]*>/g, "")

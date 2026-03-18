@@ -5,14 +5,14 @@ import Support from "@/components/support";
 
 const Page = () => {
   return (
-    <div>
+    <div className="bg-black min-h-screen text-white">
       <Nav />
       <div className="pt-36 ">
         <div className="px-20">
-          <p className="text-slate-500 font-semibold text-lg font-montserrat ">
+          <p className="text-slate-400 font-semibold text-lg font-montserrat ">
             GET IN TOUCH
           </p>
-          <p className="text-4xl mt-6 font-bold font-montserrat">
+          <p className="text-4xl mt-6 font-bold font-montserrat text-white">
             Contact Details
           </p>
         </div>

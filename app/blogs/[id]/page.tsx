@@ -109,17 +109,17 @@ const Page = ({ params }: { params: any }) => {
     );
   }
   return (
-    <div className="font-custom">
+    <div className="font-custom bg-black min-h-screen text-white">
       <Nav />
       {/* offest */}
       <div className="pt-28"></div>
 
       <div className="md:pt-7 px-4 md:px-32">
         <div className="flex items-center ">
-          Blog <div className="w-6 mx-3 h-[1px]  border items-center flex" />
-          <span className="text-slate-600 ">{formattedDate}</span>
+          Blog <div className="w-6 mx-3 h-[1px] border-white/20 items-center flex" />
+          <span className="text-slate-400 ">{formattedDate}</span>
         </div>
-        <p className="text-4xl mt-5  md:text-6xl font-bold font-montserrat  tracking-wider">
+        <p className="text-4xl mt-5 md:text-6xl font-bold font-montserrat tracking-wider text-white">
           {blogPost?.title}
         </p>
         <img src={blogPost?.image} alt="" className="w-full mt-8 max-h-[450px] object-cover" />
@@ -127,7 +127,7 @@ const Page = ({ params }: { params: any }) => {
         {/* blog post */}
         <div className="leading-7 md:leading-8 text-justify">
           <div
-            className="leading-7 md:leading-8 text-justify mt-6"
+            className="leading-7 md:leading-8 text-justify mt-6 text-slate-300"
             dangerouslySetInnerHTML={{ __html: blogPost?.post }}
           />
 
@@ -140,13 +140,13 @@ const Page = ({ params }: { params: any }) => {
                 className="h-56 mr-3 rounded-[100%]"
               />
               <div className="indent-0 ">
-                <p className="text-2xl font-bold">Jesse Nnorom</p>
-                <p className="text-slate-500 mt-2">Chief Editor</p>
+                <p className="text-2xl font-bold text-white">Jesse Nnorom</p>
+                <p className="text-slate-400 mt-2">Chief Editor</p>
               </div>
             </div>
 
             <div className="w-full">
-              <p className="text-2xl font-bold pb-9 indent-0">Leave a Reply</p>
+              <p className="text-2xl font-bold pb-9 indent-0 text-white">Leave a Reply</p>
 
               {/* form */}
               <input
@@ -155,7 +155,7 @@ const Page = ({ params }: { params: any }) => {
                 name=""
                 value={name}
                 placeholder="Full Name*"
-                className="pl-1 border-b-2  border-slate-700 outline-none w-full pb-4"
+                className="pl-1 border-b border-white/20 bg-transparent outline-none w-full pb-4 text-white placeholder:text-slate-500 focus:border-blue-500 transition-colors"
                 id=""
               />
               <input
@@ -164,16 +164,21 @@ const Page = ({ params }: { params: any }) => {
                 name=""
                 value={email}
                 placeholder="Email Address*"
-                className="pl-1 border-b-2  border-slate-700 outline-none w-full pb-4 mt-7"
+                className="pl-1 border-b border-white/20 bg-transparent outline-none w-full pb-4 mt-7 text-white placeholder:text-slate-500 focus:border-blue-500 transition-colors"
                 id=""
               />
-              <Textarea onChange={handleCommentChange} value={comment} />
+              <Textarea 
+                onChange={handleCommentChange} 
+                value={comment} 
+                className="mt-7 bg-transparent border-white/20 text-white placeholder:text-slate-500 focus:border-blue-500" 
+                placeholder="Comment*"
+              />
 
               <div className="h-20 flex ">
                 {comment && name && email ? (
                   <button
                     onClick={addData}
-                    className=" border-2 rounded-full h-12 w-48 text-center flex justify-center items-center  mt-6 hover:bg-black hover:text-white"
+                    className=" border border-white/20 rounded-full h-12 w-48 text-center flex justify-center items-center mt-6 hover:bg-white hover:text-black transition-all"
                   >
                     {isLoading ? (
                       <Spinner className="animate-spin text-orange-600 " />

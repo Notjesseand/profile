@@ -19,30 +19,30 @@ export function Sidebar() {
     <Sheet>
       <SheetTrigger asChild>
         {/* <Button variant="outline">Open</Button> */}
-        <button className="rounded-full aspect-square p-2 relative -mt-1 bg-white">
+        <button className="rounded-full aspect-square p-2 relative -mt-1 bg-transparent text-white hover:bg-white/10 transition-colors outline-none ring-0 focus:outline-none focus:ring-0 focus-visible:ring-0 focus-visible:outline-none border-none">
           <HiMiniBars2 className="md:text-5xl text-3xl" />
         </button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="bg-black/95 border-l border-white/10 text-white backdrop-blur-xl">
         {/* <SheetHeader>
           <SheetTitle>Edit profile</SheetTitle>
           <SheetDescription>
             Make changes to your profile here. Click save when you're done.
           </SheetDescription>
         </SheetHeader> */}
-        <div className=" ">
-          <div className=" items-center justify-center  space-y-4 font-custom mt-10 text-lg">
-            <Link href="/" className="flex justify-center">
+        <div className="">
+          <div className="items-center justify-center space-y-6 font-custom mt-10 text-lg">
+            <Link href="/" className="flex justify-center text-white hover:text-blue-400 transition-colors">
               Home
             </Link>
-            <Link href="/resume" className="flex justify-center">
+            <Link href="/resume" className="flex justify-center text-white hover:text-blue-400 transition-colors">
               Resume
             </Link>
 
-            <Link href="/blogs" className="flex justify-center">
+            {/* <Link href="/blogs" className="flex justify-center text-white hover:text-blue-400 transition-colors">
               Blog
-            </Link>
-            <Link href="" className="flex justify-center">
+            </Link> */}
+            <Link href="/contact" className="flex justify-center text-white hover:text-blue-400 transition-colors">
               Contact
             </Link>
           </div>
