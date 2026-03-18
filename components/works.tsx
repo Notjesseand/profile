@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import useOnScreen from "@/hooks/scroll";
@@ -58,9 +59,11 @@ export default function Works() {
              target="_blank"
            >
              <div className="relative w-full aspect-video bg-black/40 overflow-hidden">
-               <img
+               <Image
                  src="/new-images/obels.png"
-                 className="w-full h-full object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                 alt="Obels"
+                 fill
+                 className="object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                />
              </div>
              <div className="p-6 flex flex-col items-center text-center">
@@ -92,9 +95,11 @@ export default function Works() {
              target="_blank"
            >
              <div className="relative w-full aspect-video bg-black/40 overflow-hidden">
-               <img
+               <Image
                  src="https://res.cloudinary.com/dv62ty87r/image/upload/v1728659940/rubix_e6xs0g.png"
-                 className="w-full h-full object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                 alt="Rubix"
+                 fill
+                 className="object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                />
              </div>
              <div className="p-6 flex flex-col items-center text-center">
@@ -126,9 +131,11 @@ export default function Works() {
              target="_blank"
            >
              <div className="relative w-full aspect-video bg-black/40 overflow-hidden">
-               <img
+               <Image
                  src="/new-images/stable-homes.png"
-                 className="w-full h-full object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                 alt="Stable Homes"
+                 fill
+                 className="object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                />
              </div>
              <div className="p-6 flex flex-col items-center text-center">
@@ -172,9 +179,11 @@ export default function Works() {
              target="_blank"
            >
              <div className="relative w-full aspect-video bg-black/40 overflow-hidden">
-               <img
+               <Image
                  src="/new-images/mango-cares.png"
-                 className="w-full h-full object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                 alt="Mango Cares"
+                 fill
+                 className="object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                />
              </div>
              <div className="p-6 flex flex-col items-center text-center">
@@ -206,9 +215,11 @@ export default function Works() {
              target="_blank"
            >
              <div className="relative w-full aspect-video bg-black/40 overflow-hidden">
-               <img
+               <Image
                  src="/new-images/thugger-store.png"
-                 className="w-full h-full object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                 alt="Thuggers Store"
+                 fill
+                 className="object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                />
              </div>
              <div className="p-6 flex flex-col items-center text-center">
