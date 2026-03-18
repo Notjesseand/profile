@@ -69,7 +69,7 @@ export default function Works() {
                  Obels
                </p>
                <span className="text-sm text-purple-300 font-medium mt-1">
-                 Complex Web App
+                 Logistics Platform
                </span>
              </div>
            </Link>
