@@ -63,7 +63,7 @@ export default function Works() {
                  src="/new-images/obels.png"
                  alt="Obels"
                  fill
-                 className="object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                 className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                />
              </div>
              <div className="p-6 flex flex-col items-center text-center">
@@ -99,7 +99,7 @@ export default function Works() {
                  src="https://res.cloudinary.com/dv62ty87r/image/upload/v1728659940/rubix_e6xs0g.png"
                  alt="Rubix"
                  fill
-                 className="object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                 className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                />
              </div>
              <div className="p-6 flex flex-col items-center text-center">
@@ -135,7 +135,7 @@ export default function Works() {
                  src="/new-images/stable-homes.png"
                  alt="Stable Homes"
                  fill
-                 className="object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                 className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                />
              </div>
              <div className="p-6 flex flex-col items-center text-center">
@@ -183,7 +183,7 @@ export default function Works() {
                  src="/new-images/mango-cares.png"
                  alt="Mango Cares"
                  fill
-                 className="object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                 className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                />
              </div>
              <div className="p-6 flex flex-col items-center text-center">
@@ -219,7 +219,7 @@ export default function Works() {
                  src="/new-images/thugger-store.png"
                  alt="Thuggers Store"
                  fill
-                 className="object-contain p-4 transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                 className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
                />
              </div>
              <div className="p-6 flex flex-col items-center text-center">
