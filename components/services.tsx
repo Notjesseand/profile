@@ -35,11 +35,9 @@ export default function Services() {
         >
           <div className="bg-white/5 border border-white/10 rounded-xl py-16 shadow-lg hover:bg-white/10 transition-all duration-300 text-start px-6 md:px-10">
             <BsLaptop className="text-7xl flex mt-3 text-blue-400" />
-            <p className="text-2xl font-semibold mt-1 text-white">Website design</p>
+            <p className="text-2xl font-semibold mt-1 text-white">Frontend Development</p>
             <p className="text-slate-400 mt-4">
-              I enjoy bringing ideas to life in the browser. I design websites
-              and web applications using technologies like React.js, Next.js,
-              Tailwind.css, Shadcn/ui, and animation libraries
+              I design and build modern, responsive web applications with a focus on performance, usability, and clean user experiences. Using technologies like React, Next.js, Tailwind CSS, and component systems, I turn ideas into fast, interactive interfaces that scale.
             </p>
           </div>
         </motion.div>
@@ -57,12 +55,10 @@ export default function Services() {
           <div className="bg-white/5 border border-white/10 rounded-xl py-16 shadow-lg hover:bg-white/10 transition-all duration-300 text-start px-6 md:px-10">
             <CiServer className="text-7xl flex mt-3 text-purple-400" />
             <p className="text-2xl font-semibold mt-1 text-white">
-              Backend and RESTful API Development
+              Backend & API Development
             </p>
             <p className="text-slate-400 mt-4">
-              I am proficient in creating and managing RESTful APIs. I use
-              Node.js and Express.js to build robust and scalable APIs, ensuring
-              seamless communication between the client and server.
+              I develop robust backend systems and RESTful APIs that power seamless application experiences. With Node.js and Express, I focus on building secure, scalable, and efficient architectures that ensure reliable communication between systems.
             </p>
           </div>
         </motion.div>
@@ -79,12 +75,9 @@ export default function Services() {
         >
           <div className="bg-white/5 border border-white/10 rounded-xl py-16 shadow-lg hover:bg-white/10 transition-all duration-300 text-start px-6 md:px-10">
             <FaDatabase className="text-7xl flex mt-3 text-cyan-400" />
-            <p className="text-2xl font-semibold mt-1 text-white">Database Design</p>
+            <p className="text-2xl font-semibold mt-1 text-white">Database Design & Management</p>
             <p className="text-slate-400 mt-4">
-              I have extensive experience in managing and interacting with
-              databases. I use MongoDB for its flexibility and scalability, and
-              Firebase for real-time data synchronization and its integration
-              with the Google Cloud platform.
+              I design and manage scalable data systems tailored to application needs. From flexible NoSQL databases like MongoDB to real-time solutions with Firebase, I ensure data is structured, accessible, and optimized for performance.
             </p>
           </div>
         </motion.div>
@@ -102,12 +95,10 @@ export default function Services() {
           <div className="bg-white/5 border border-white/10 rounded-xl py-16 shadow-lg hover:bg-white/10 transition-all duration-300 text-start px-6 md:px-10">
             <FaMobileAlt className="text-7xl flex mt-3 text-emerald-400" />
             <p className="text-2xl font-semibold mt-1 text-white">
-              Cross‑platform App Development
+              Mobile App Development
             </p>
             <p className="text-slate-400 mt-4">
-              With React Native, I build mobile applications that run
-              seamlessly on both iOS and Android, sharing a single codebase
-              while delivering native‑like user experiences.
+              I build high-performance cross-platform mobile applications using React Native. By maintaining a shared codebase for iOS and Android, I deliver consistent, efficient, and native-like user experiences.
             </p>
           </div>
         </motion.div>
