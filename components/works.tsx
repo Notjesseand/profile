@@ -155,7 +155,7 @@ export default function Works() {
       <div className="mx-8 md:mx-20 mt-24 mb-8 relative">
         <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-green-400 to-emerald-600 rounded-full hidden md:block"></div>
         <h3 className="text-3xl font-bold font-montserrat text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500">
-          Landing Page Projects
+          Landing Pages
         </h3>
         <p className="text-slate-500 mt-2 text-sm uppercase tracking-widest font-semibold">High-conversion Sites</p>
       </div>
