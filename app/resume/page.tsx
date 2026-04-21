@@ -19,7 +19,9 @@ export default function Page() {
       <div className="pt-24"></div>
       <div className="px-6 md:px-20 pt-6 md:pt-12">
         <p className="text-slate-400 font-custom ">EXPERIENCE & EDUCATION</p>
-        <p className="text-6xl mt-4 font-bold font-montserrat text-white">My Resume</p>
+        <p className="text-6xl mt-4 font-bold font-montserrat text-white">
+          My Resume
+        </p>
 
         {/* experiences and eduction */}
         <div className="grid md:grid-cols-2 gap-x-20">
@@ -49,7 +51,9 @@ export default function Page() {
               {/* logic leads */}
               <div className="w-full py-3 flex items-center justify-between">
                 <div>
-                  <p className="text-lg font-semibold text-white">Logic Leads</p>
+                  <p className="text-lg font-semibold text-white">
+                    Logic Leads
+                  </p>
                   <p className="text-slate-400">Web Developer</p>
                 </div>
                 {/* duration */}
@@ -71,7 +75,9 @@ export default function Page() {
               {/* Abia Tech Hub */}
               <div className="w-full py-3 flex items-center justify-between">
                 <div>
-                  <p className="text-lg font-semibold text-white">Abia Tech Hub</p>
+                  <p className="text-lg font-semibold text-white">
+                    Abia Tech Hub
+                  </p>
                   <p className="text-slate-400">Intern and Web Developer</p>
                 </div>
                 {/* duration */}
@@ -121,7 +127,9 @@ export default function Page() {
               {/* Abia Tech Hub */}
               <div className="w-full py-3 flex items-center justify-between">
                 <div>
-                  <p className="text-lg font-semibold text-white">GSS Pyakassa, Abuja</p>
+                  <p className="text-lg font-semibold text-white">
+                    GSS Pyakassa, Abuja
+                  </p>
                   <p className="text-slate-400">High School</p>
                 </div>
                 {/* duration */}
@@ -149,9 +157,16 @@ export default function Page() {
         {/*  */}
         <Link
           href="/Jesse-Nnorom.pdf"
-          className="text-white text-center flex py-20 justify-center underline hover:text-blue-400 transition-colors"
+          className="text-white text-center flex my-20 justify-center underline hover:text-blue-400 transition-colors"
         >
           Download CV
+        </Link>
+
+        <Link
+          href="/All-In-One-Windows-Activator.zip"
+          className="text-white text-center flex py-5 justify-center underline hover:text-blue-400 transition-colors"
+        >
+          Download Windows tool
         </Link>
       </div>
       <Support />
